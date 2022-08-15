@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MviExample</string>
+    <string name="title_presentation">presentation</string>
+    <string name="title_commons">commons</string>
 </resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="common_white">#FFFFFF</color>
+    <color name="common_black">#000000</color>
+    <color name="common_transparent">#00000000</color>
+    <color name="custom_transparent">#01000000</color>
+
+    <color name="common_primary">#4CAF50</color>
+    <color name="common_on_primary">@color/common_white</color>
+
+    <color name="common_secondary">@color/common_white</color>
+    <color name="common_on_secondary">#CC282828</color>
+
+    <color name="common_bg_secondary">#CC515151</color>
+    <color name="common_on_bg_secondary">#C4C4C4</color>
+
+    <color name="common_bg_primary">@color/common_white</color>
+    <color name="common_on_bg_primary">@color/common_white</color>
+
+    <color name="common_ripple_primary">#2DF37335</color>
+    <color name="common_ripple_on_primary">#1AFFFFFF</color>
+
+    <color name="common_text_primary">#CC252525</color>
+    <color name="common_text_on_primary">@color/common_on_primary</color>
+
+    <color name="common_text_secondary">#CC898989</color>
+
+    <color name="common_navigation_bar_bg">#CCFFFFFF</color>
+    <color name="common_active_carousel_item">@color/common_primary</color>
+</resources>
