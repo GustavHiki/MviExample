@@ -30,7 +30,7 @@ val Context.screenHeight
 
 fun View.copyToClipBoard(text: String, @StringRes notificationText: Int) {
     val clipboard = ContextCompat.getSystemService(context, ClipboardManager::class.java)
-    val clip = ClipData.newPlainText("aniBlast", text)
+    val clip = ClipData.newPlainText("mviExample", text)
     clipboard?.setPrimaryClip(clip)
     shortSnackBar(notificationText)
 }

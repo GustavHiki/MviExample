@@ -12,7 +12,6 @@ object Config {
         const val androidVersionName = "2.1.0"
 
         const val hiltVersion = "2.40.5"
-        const val huaweiCoreVersion = "1.6.3.300"
     }
 
     object Dependencies {

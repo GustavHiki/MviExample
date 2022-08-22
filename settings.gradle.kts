@@ -17,3 +17,4 @@ include(":commons:commons-android")
 include(":commons:commons-kotlin")
 
 include(":presentation:home")
+include(":mvi-core")

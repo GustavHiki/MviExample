@@ -38,6 +38,7 @@ android {
 dependencies {
     implementation(project(Modules.Commons.kotlin))
     implementation(project(Modules.domain))
+    implementation(project(Modules.mviCore))
 
     // AndroidX
     implementation(Dependencies.AndroidX.annotation)

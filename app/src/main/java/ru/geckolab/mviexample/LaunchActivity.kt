@@ -65,7 +65,6 @@ class LaunchActivity : AppCompatActivity() {
         viewModel.onCreate()
 
         setContentView(binding.root)
-        setupNavigationBar()
         initBottomNavigation()
 
         WindowCompat.setDecorFitsSystemWindows(window, false)
@@ -96,26 +95,5 @@ class LaunchActivity : AppCompatActivity() {
     private fun initBottomNavigation() {
         binding.bottomNavigation.setOnItemSelectedListener(tabItemSelectedListener)
         binding.bottomNavigation.setOnItemReselectedListener(tabItemReselectedListener)
-    }
-
-    private fun setupNavigationBar() {
-        Insetter
-            .builder()
-            .setOnApplyInsetsListener { _, insets, _ ->
-                window.navigationBarColor = getColorCompat(
-                    when {
-                        Build.VERSION.SDK_INT < Build.VERSION_CODES.O_MR1 -> CommonR.color.common_black
-                        isLandscape -> CommonR.color.common_navigation_bar_bg
-                        isGestureNavigationBar(
-                            insets.navigationBarHeight,
-                            isLandscape
-                        ) -> CommonR.color.common_transparent
-                        else -> CommonR.color.common_navigation_bar_bg
-                    }
-                )
-            }
-            .consume(Insetter.CONSUME_NONE)
-            .build()
-            .applyToView(binding.root)
     }
 }
